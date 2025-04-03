@@ -7,7 +7,8 @@ const longoBt = document.querySelector('.app__card-button--longo');
 const curtoBt = document.querySelector('.app__card-button--curto');
 const musicaFocoInput = document.querySelector('#alternar-musica');
 const musica = new Audio('/sons/luna-rise-part-one.mp3');
-musica.loop
+musica.loop = true;
+
 musicaFocoInput.addEventListener('change', () => {
     if (musica.paused) {
         musica.play();
